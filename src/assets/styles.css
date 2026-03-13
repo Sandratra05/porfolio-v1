@@ -442,6 +442,18 @@ main {
 }
 
 /* ============================================
+   EDUCATION SECTION
+   ============================================ */
+
+.section-education {
+  max-width: 100vw;
+  min-height: auto;
+  background: transparent;
+  padding: 6rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* ============================================
    TECH SECTION
    ============================================ */
 

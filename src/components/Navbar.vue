@@ -118,6 +118,7 @@ const isLangMenuOpen = ref(false)
 const links = computed(() => [
   { href: '#home', label: currentLanguage.value === 'fr' ? 'Accueil' : 'Home' },
   { href: '#about', label: t('nav.about') },
+  { href: '#education', label: t('nav.education') },
   { href: '#tech', label: t('nav.techs') },
   { href: '#projects', label: t('nav.projects') }
 ])
