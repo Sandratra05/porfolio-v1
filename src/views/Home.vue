@@ -1,6 +1,7 @@
 <script setup>
 import Hero from '../components/Hero.vue'
 import About from '../components/About.vue'
+import Formation from '../components/Formation.vue'
 import Techs from '../components/Techs.vue'
 import Projects from '../components/Projects.vue'
 </script>
@@ -19,6 +20,10 @@ import Projects from '../components/Projects.vue'
 
     <section id="about" class="section section-about">
       <About />
+    </section>
+
+    <section id="education" class="section section-education">
+      <Formation />
     </section>
 
     <section id="tech" class="section section-techs">

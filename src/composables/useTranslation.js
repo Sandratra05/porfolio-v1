@@ -7,6 +7,7 @@ const translations = {
     // Navbar
     nav: {
       about: 'À propos',
+      education: 'Formation',
       projects: 'Projets',
       techs: 'Technologies',
       contact: 'Contact',
@@ -26,6 +27,28 @@ const translations = {
       description1: 'Je suis actuellement en 3ème année à l\'IT University Madagascar. Développeur surtout orienté backend, j\'aime concevoir des API robustes, scalables et faciles à maintenir.',
       description2: 'Je m\'intéresse aussi au frontend : créer des interfaces simples, accessibles et réactives. Mon objectif est de construire des solutions qui ont un réel impact.',
       cta: 'Ouvert aux missions freelance et aux stages — N\'hésitez pas à me contacter !'
+    },
+    // Education
+    education: {
+      label: 'Parcours',
+      title: 'Formation',
+      subtitle: 'Mon parcours académique',
+      status: {
+        completed: 'Terminé',
+        current: 'En cours'
+      },
+      baccalaureate: {
+        period: '2023',
+        degree: 'Baccalauréat Série Scientifique',
+        details: 'Obtenu avec mention assez bien.',
+        school: 'Lycée privé La Farandole'
+      },
+      license: {
+        period: '2023 - 2026',
+        degree: 'Licence en Informatique',
+        details: 'Formation en cours, orientée développement logiciel et web.',
+        school: 'IT University'
+      }
     },
     // Projects
     projects: {
@@ -61,6 +84,7 @@ const translations = {
       navigation: 'Navigation',
       home: 'Accueil',
       about: 'À propos',
+      education: 'Formation',
       technologies: 'Technologies',
       projects: 'Projets',
       contact: 'Contact',
@@ -77,6 +101,7 @@ const translations = {
     // Navbar
     nav: {
       about: 'About',
+      education: 'Education',
       projects: 'Projects',
       techs: 'Technologies',
       contact: 'Contact',
@@ -96,6 +121,28 @@ const translations = {
       description1: 'I am currently in my 3rd year at IT University Madagascar. Mainly backend-oriented developer, I like designing robust, scalable and easy-to-maintain APIs.',
       description2: 'I am also interested in frontend: creating simple, accessible and responsive interfaces. My goal is to build solutions that have a real impact.',
       cta: 'Open to freelance missions and internships — Feel free to contact me!'
+    },
+    // Education
+    education: {
+      label: 'Background',
+      title: 'Education',
+      subtitle: 'My academic background',
+      status: {
+        completed: 'Completed',
+        current: 'Ongoing'
+      },
+      baccalaureate: {
+        period: '2023',
+        degree: 'Scientific Baccalaureate',
+        details: 'Obtained with honors.',
+        school: 'La Farandole Private High School'
+      },
+      license: {
+        period: '2023 - present',
+        degree: 'Bachelor\'s Degree in Computer Science',
+        details: 'Ongoing program focused on software and web development.',
+        school: 'IT University'
+      }
     },
     // Projects
     projects: {
@@ -131,6 +178,7 @@ const translations = {
       navigation: 'Navigation',
       home: 'Home',
       about: 'About',
+      education: 'Education',
       technologies: 'Technologies',
       projects: 'Projects',
       contact: 'Contact',

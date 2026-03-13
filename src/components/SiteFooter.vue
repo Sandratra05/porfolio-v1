@@ -14,6 +14,7 @@
           <ul class="footer-links">
             <li><a href="#home">{{ t('footer.home') }}</a></li>
             <li><a href="#about">{{ t('footer.about') }}</a></li>
+            <li><a href="#education">{{ t('footer.education') }}</a></li>
             <li><a href="#tech">{{ t('footer.technologies') }}</a></li>
             <li><a href="#projects">{{ t('footer.projects') }}</a></li>
           </ul>

@@ -7,7 +7,6 @@ const { t } = useTranslation()
 const langages = ref([
   { name: 'Java', level: 90, icon: 'devicon-java-plain colored' },
   { name: 'C#', level: 60, icon: 'devicon-csharp-plain colored' },
-  { name: 'Python', level: 70, icon: 'devicon-python-plain colored' },
   { name: 'PHP', level: 80, icon: 'devicon-php-plain colored' },
   { name: 'JavaScript', level: 70, icon: 'devicon-javascript-plain colored' }
 ])
