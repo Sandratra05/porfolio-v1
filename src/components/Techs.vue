@@ -13,21 +13,19 @@ const langages = ref([
 
 const frameworks = ref([
   { name: 'Spring Boot', level: 90, icon: 'devicon-spring-plain colored' },
-  { name: 'ASP.NET', level: 60, icon: 'devicon-dot-net-plain colored' },
   { name: 'Flight PHP', level: 90, icon: 'devicon-php-plain colored' },
-  { name: 'Laravel', level: 50, icon: 'devicon-laravel-plain colored' },
-  { name: 'ReactJS', level: 50, icon: 'devicon-react-plain colored' },
-  { name: 'VueJS', level: 60, icon: 'devicon-vuejs-plain colored' }
+  { name: 'VueJS', level: 60, icon: 'devicon-vuejs-plain colored' },
+  { name: 'ReactJS', level: 50, icon: 'devicon-react-plain colored' }
 ])
 
 const basesDonnees = ref([
   { name: 'MySQL', level: 95, icon: 'devicon-mysql-plain colored' },
-  { name: 'PostgreSQL', level: 90, icon: 'devicon-postgresql-plain colored' },
-  { name: 'Oracle', level: 50, icon: 'devicon-oracle-plain colored' }
+  { name: 'PostgreSQL', level: 90, icon: 'devicon-postgresql-plain colored' }
 ])
 
 const outils = ref([
   { name: 'Git', level: 80, icon: 'devicon-git-plain colored' },
+  { name: 'GitHub', level: 80, icon: 'devicon-github-plain colored' },
   { name: 'Docker', level: 70, icon: 'devicon-docker-plain colored' },
   { name: 'Linux', level: 90, icon: 'devicon-linux-plain colored' },
   { name: 'Postman', level: 70, icon: 'devicon-postman-plain colored' },
