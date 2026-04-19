@@ -64,7 +64,7 @@
 
 <script setup>
 import { useTranslation } from '../composables/useTranslation'
-import cv from "../assets/cv/CV-Sandratra-v1.pdf"
+import cv from "../assets/cv/CV-Sandratra.pdf"
 
 const { t } = useTranslation()
 </script>
