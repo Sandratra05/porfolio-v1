@@ -128,7 +128,17 @@ const currentLang = computed(() => {
 })
 
 const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value
+  if (isMobileMenuOpen.value) {
+    // Fermeture avec animation
+    const menu = document.querySelector('.mobile-menu')
+    menu?.classList.add('closing')
+    setTimeout(() => {
+      isMobileMenuOpen.value = false
+      menu?.classList.remove('closing')
+    }, 300)
+  } else {
+    isMobileMenuOpen.value = true
+  }
 }
 
 const toggleLangMenu = () => {
@@ -259,6 +269,28 @@ function goToSection(href) {
   }
 }
 
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
 .lang-option {
   display: flex;
   align-items: center;
@@ -292,6 +324,8 @@ function goToSection(href) {
   border: none;
   color: var(--text-primary);
   cursor: pointer;
+  z-index: 101;
+  position: relative;
 }
 
 .mobile-menu-btn svg {
@@ -307,10 +341,27 @@ function goToSection(href) {
   padding: 1rem;
   background: var(--bg-primary);
   border-top: 1px solid var(--border-color);
+  z-index: 98;
 }
 
 .mobile-menu.open {
+  background-color: var(--color-primary-dark);
   display: flex;
+  animation: slideInDown 0.3s ease-out;
+}
+
+.mobile-menu.closing {
+  animation: slideOutUp 0.3s ease-out;
+  display: flex;
+}
+
+.mobile-menu.open a {
+  color: white;
+}
+
+.mobile-menu.open a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .mobile-menu a {
@@ -389,9 +440,34 @@ function goToSection(href) {
   .nav-links {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: block;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu.open {
+    background-color: var(--color-primary-dark);
+    display: flex;
+  }
+
+  .mobile-menu.open a {
+    color: white;
+  }
+
+  .mobile-menu.open a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
   }
 }
 </style>
