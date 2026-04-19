@@ -14,6 +14,7 @@ const project = computed(() => getProjectById(route.params.id))
 // Gallery state
 const selectedImageIndex = ref(0)
 const isLightboxOpen = ref(false)
+let carouselInterval = null
 
 const selectImage = (index) => {
   selectedImageIndex.value = index
@@ -23,11 +24,17 @@ const openLightbox = (index) => {
   selectedImageIndex.value = index
   isLightboxOpen.value = true
   document.body.style.overflow = 'hidden'
+
+  // Start autoplay carousel if more than 4 images
+  if (project.value && project.value.images && project.value.images.length > 4) {
+    startCarousel()
+  }
 }
 
 const closeLightbox = () => {
   isLightboxOpen.value = false
   document.body.style.overflow = ''
+  stopCarousel()
 }
 
 const nextImage = () => {
@@ -39,6 +46,20 @@ const nextImage = () => {
 const prevImage = () => {
   if (project.value && project.value.images) {
     selectedImageIndex.value = (selectedImageIndex.value - 1 + project.value.images.length) % project.value.images.length
+  }
+}
+
+const startCarousel = () => {
+  if (carouselInterval) stopCarousel()
+  carouselInterval = setInterval(() => {
+    nextImage()
+  }, 2000)
+}
+
+const stopCarousel = () => {
+  if (carouselInterval) {
+    clearInterval(carouselInterval)
+    carouselInterval = null
   }
 }
 
@@ -71,6 +92,7 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('keydown', handleKeydown)
   document.body.style.overflow = ''
+  stopCarousel()
 })
 </script>
 
