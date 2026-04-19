@@ -17,11 +17,57 @@ import adoption from '../assets/images/adoptMe.png'
 import adoption1 from '../assets/images/adopt-dashboard.png'
 import adoption2 from '../assets/images/adopt-admin.png'
 import adoption3 from '../assets/images/adopt-user.png'
+import createUser from '../assets/images/create-user.png'
+import listEditButton from '../assets/images/list-edit-button.png'
+import listSignalement from '../assets/images/list-signalement.png'
+import listEdit from '../assets/images/list-edit.png'
+import login from '../assets/images/login.png'
+import unblockSuccess from '../assets/images/unblock-success.png'
+import unblockUser from '../assets/images/unblock-user.png'
+import visiteur from '../assets/images/visiteur.png'
+import creerSignalementTri from '../assets/images/creer-signalement-tri.jpg'
+import creerSignalement from '../assets/images/creer-signalement.jpg'
+import formCarte from '../assets/images/form-carte.jpg'
+import formEnd from '../assets/images/form-end.jpg'
+import formSelection from '../assets/images/form-selection.jpg'
+import listSignalementVisiteur from '../assets/images/list-signalement-visiteur.jpg'
+import selectionPoint from '../assets/images/selection-point.jpg'
+
+
 
 // Données des projets avec plus de détails
 // Note: Pour ajouter plus d'images, importer les images et les ajouter au tableau 'images'
 const projectsData = {
   fr: [
+    { 
+      id: 'mutli-plateforme-gestion-routier',
+      title: 'Multi-plateforme de gestion de travaux routiers', 
+      shortDescription: 'Développement des plateformes de travaux routiers',
+      description: 'Application web et mobile pour la gestion de travaux routiers, permettant de suivre les projets, les équipes et les ressources en temps réel. L\'application web offre un tableau de bord complet pour les gestionnaires, tandis que l\'application mobile permet aux équipes sur le terrain de mettre à jour l\'avancement et de signaler les problèmes.',
+      image: login,
+      images: [listSignalement, listEditButton, listEdit, visiteur, createUser, unblockUser, unblockSuccess, creerSignalement, creerSignalementTri, formCarte, formEnd, formSelection, listSignalementVisiteur, selectionPoint],
+      technologies: ['Spring Boot', 'Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
+      link: '#',
+      repo: '#',
+      objectives: [
+        'Centraliser la gestion des projets de travaux routiers',
+        'Suivre en temps réel l\'avancement des travaux',
+        'Améliorer la communication entre les équipes de terrain et les gestionnaires',
+      ],
+      features: [
+        'Gestions des budgets et ressources',
+        'Suivi de l\'avancement avec géolocalisation',
+        'Système de signalement de problèmes en temps réel',
+        'Rapports et analyses de performance',
+        'Notifications et alertes personnalisables'
+      ],
+      role: 'Développeur Backend & Mobile',
+      duration: '3 semaines',
+      challenges: [
+        'Conception d\'une architecture robuste pour la synchronisation des données entre les plateformes',
+        'Création d\'interfaces mobiles intuitives pour les équipes sur le terrain'
+      ]
+    },
     { 
       id: 'coffee-production',
       title: 'Gestion de la production de café', 
@@ -141,7 +187,36 @@ const projectsData = {
     }
   ],
   en: [
-    { 
+    {
+      id: 'mutli-plateforme-gestion-routier',
+      title: 'Multi-platform Road Construction Management',
+      shortDescription: 'Development of road construction management platforms',
+      description: 'Web and mobile application for managing road construction projects, allowing real-time tracking of projects, teams, and resources. The web application provides a comprehensive dashboard for managers, while the mobile application allows field teams to update progress and report issues.',
+      image: login,
+      images: [listSignalement, listEditButton, listEdit, visiteur, createUser, unblockUser, unblockSuccess, creerSignalement, creerSignalementTri, formCarte, formEnd, formSelection, listSignalementVisiteur, selectionPoint],
+      technologies: ['Spring Boot', 'Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
+      link: '#',
+      repo: '#',
+      objectives: [
+        'Centralize road construction project management',
+        'Track project progress in real-time',
+        'Improve communication between field teams and managers',
+      ],
+      features: [
+        'Budget and resource management',
+        'Progress tracking with geolocation',
+        'Real-time issue reporting system',
+        'Performance reports and analytics',
+        'Customizable notifications and alerts'
+      ],
+      role: 'Backend & Mobile Developer',
+      duration: '3 weeks',
+      challenges: [
+        'Designing a robust architecture for data synchronization across platforms',
+        'Creating intuitive mobile interfaces for field teams'
+      ]
+    },
+    {
       id: 'coffee-production',
       title: 'Coffee Production Management', 
       shortDescription: 'Coffee production management with interactive dashboard.',
