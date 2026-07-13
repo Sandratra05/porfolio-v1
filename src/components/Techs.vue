@@ -14,7 +14,7 @@ const langages = ref([
 const frameworks = ref([
   { name: 'Spring Boot', level: 90, icon: 'devicon-spring-plain colored' },
   { name: 'Flight PHP', level: 90, icon: 'devicon-php-plain colored' },
-  { name: 'VueJS', level: 60, icon: 'devicon-vuejs-plain colored' },
+  { name: 'VueJS', level: 90, icon: 'devicon-vuejs-plain colored' },
   { name: 'ReactJS', level: 50, icon: 'devicon-react-plain colored' }
 ])
 
