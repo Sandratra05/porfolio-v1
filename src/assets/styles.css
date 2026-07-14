@@ -521,12 +521,12 @@ main {
 
 .tech-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 1rem;
 }
 
 .tech-item {
-  background: var(--color-surface);
+  /*background: var(--color-surface);*/
   padding: 1.25rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
@@ -544,7 +544,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.75rem;
+  /*margin-bottom: 0.75rem;*/
 }
 
 .tech-label {

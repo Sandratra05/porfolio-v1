@@ -5,31 +5,30 @@ import { useTranslation } from '../composables/useTranslation'
 const { t } = useTranslation()
 
 const langages = ref([
-  { name: 'Java', level: 90, icon: 'devicon-java-plain colored' },
-  { name: 'C#', level: 60, icon: 'devicon-csharp-plain colored' },
-  { name: 'PHP', level: 80, icon: 'devicon-php-plain colored' },
-  { name: 'JavaScript', level: 70, icon: 'devicon-javascript-plain colored' }
+  { name: 'Java' , icon: 'devicon-java-plain colored' },
+  { name: 'PHP' , icon: 'devicon-php-plain colored' },
+  { name: 'JavaScript' , icon: 'devicon-javascript-plain colored' }
 ])
 
 const frameworks = ref([
-  { name: 'Spring Boot', level: 90, icon: 'devicon-spring-plain colored' },
-  { name: 'Flight PHP', level: 90, icon: 'devicon-php-plain colored' },
-  { name: 'VueJS', level: 90, icon: 'devicon-vuejs-plain colored' },
-  { name: 'ReactJS', level: 50, icon: 'devicon-react-plain colored' }
+  { name: 'Spring Boot' , icon: 'devicon-spring-plain colored' },
+  { name: 'Flight PHP' , icon: 'devicon-php-plain colored' },
+  { name: 'VueJS' , icon: 'devicon-vuejs-plain colored' },
 ])
 
 const basesDonnees = ref([
-  { name: 'MySQL', level: 95, icon: 'devicon-mysql-plain colored' },
-  { name: 'PostgreSQL', level: 90, icon: 'devicon-postgresql-plain colored' }
+  { name: 'MySQL' , icon: 'devicon-mysql-plain colored' },
+  { name: 'PostgreSQL' , icon: 'devicon-postgresql-plain colored' },
+  { name: 'SQLite' , icon: 'devicon-sqlite-plain colored' },
 ])
 
 const outils = ref([
-  { name: 'Git', level: 80, icon: 'devicon-git-plain colored' },
-  { name: 'GitHub', level: 80, icon: 'devicon-github-plain colored' },
-  { name: 'Docker', level: 70, icon: 'devicon-docker-plain colored' },
-  { name: 'Linux', level: 90, icon: 'devicon-linux-plain colored' },
-  { name: 'Postman', level: 70, icon: 'devicon-postman-plain colored' },
-  { name: 'Figma', level: 60, icon: 'devicon-figma-plain colored' }
+  { name: 'Git' , icon: 'devicon-git-plain colored' },
+  { name: 'GitHub' , icon: 'devicon-github-plain colored' },
+  { name: 'Docker' , icon: 'devicon-docker-plain colored' },
+  { name: 'Linux' , icon: 'devicon-linux-plain colored' },
+  { name: 'Postman' , icon: 'devicon-postman-plain colored' },
+  //{ name: 'Figma' , icon: 'devicon-figma-plain colored' }
 ])
 </script>
 
@@ -49,15 +48,15 @@ const outils = ref([
               <i :class="t.icon" class="tech-icon"></i>
               {{t.name}}
             </span>
-            <small>{{t.level}}%</small>
+            <!--<small>{{t.level}}%</small>-->
           </div>
-          <div class="progress" aria-hidden>
+          <!--<div class="progress" aria-hidden>
             <i :style="{width: t.level + '%'}" :class="{
               'level-master': t.level > 80,
               'level-intermediate': t.level > 50 && t.level <= 80,
               'level-basic': t.level <= 50
             }"></i>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -72,15 +71,15 @@ const outils = ref([
               <i :class="t.icon" class="tech-icon"></i>
               {{t.name}}
             </span>
-            <small>{{t.level}}%</small>
+            <!--<small>{{t.level}}%</small>-->
           </div>
-          <div class="progress" aria-hidden>
+          <!--<div class="progress" aria-hidden>
             <i :style="{width: t.level + '%'}" :class="{
               'level-master': t.level > 80,
               'level-intermediate': t.level > 50 && t.level <= 80,
               'level-basic': t.level <= 50
             }"></i>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -95,15 +94,15 @@ const outils = ref([
               <i :class="t.icon" class="tech-icon"></i>
               {{t.name}}
             </span>
-            <small>{{t.level}}%</small>
+            <!--<small>{{t.level}}%</small>-->
           </div>
-          <div class="progress" aria-hidden>
+          <!--<div class="progress" aria-hidden>
             <i :style="{width: t.level + '%'}" :class="{
               'level-master': t.level > 80,
               'level-intermediate': t.level > 50 && t.level <= 80,
               'level-basic': t.level <= 50
             }"></i>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -118,15 +117,15 @@ const outils = ref([
               <i :class="t.icon" class="tech-icon"></i>
               {{t.name}}
             </span>
-            <small>{{t.level}}%</small>
+            <!--<small>{{t.level}}%</small>-->
           </div>
-          <div class="progress" aria-hidden>
+          <!--<div class="progress" aria-hidden>
             <i :style="{width: t.level + '%'}" :class="{
               'level-master': t.level > 80,
               'level-intermediate': t.level > 50 && t.level <= 80,
               'level-basic': t.level <= 50
             }"></i>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
