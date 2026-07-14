@@ -3,7 +3,7 @@
     <div class="nav-inner">
       <a class="brand" href="#home" @click.prevent="goToSection('#home')">
         <span class="brand-icon">SR</span>
-        <span>Sandratra Raben</span>
+        <span class="logo">Sandratra Raben</span>
       </a>
 
       <div class="nav-links">
@@ -185,6 +185,8 @@ function goToSection(href) {
 
 .brand-icon {
   display: inline-flex;
+  font-family: 'JetBrainsItalic';
+
   align-items: center;
   justify-content: center;
   width: 36px;
@@ -194,6 +196,10 @@ function goToSection(href) {
   font-weight: 700;
   font-size: 0.875rem;
   border-radius: var(--radius-sm);
+}
+
+.logo {
+  font-family: 'Zarkichou';
 }
 
 .nav-links a {

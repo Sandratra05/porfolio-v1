@@ -72,6 +72,10 @@ const { t } = useTranslation()
 </script>
 
 <style scoped>
+.hero-title {
+  font-family: 'Zarkichou';
+}
+
 .hero-container {
   display: flex;
   align-items: center;

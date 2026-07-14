@@ -115,6 +115,15 @@ body {
   transition: background-color var(--transition-base), color var(--transition-base);
 }
 
+@font-face {
+  font-family: 'Zarkichou';
+  src: url(/src/assets/fonts/Zarkichou/Zarkichou-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'JetBrainsItalic';
+  src: url(/src/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+}
 /* ============================================
    LAYOUT
    ============================================ */
