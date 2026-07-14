@@ -40,7 +40,7 @@ const translations = {
       baccalaureate: {
         period: '2023',
         degree: 'Baccalauréat Série Scientifique',
-        details: 'Obtenu avec mention assez bien.',
+        details: 'Obtenu avec Mention Assez Bien.',
         school: 'Lycée privé La Farandole'
       },
       license: {
@@ -53,7 +53,7 @@ const translations = {
     // Projects
     projects: {
       title: 'Projets',
-      subtitle: 'Quelques projets récents que j\'ai réalisés.',
+      subtitle: 'Quelques projets que j\'ai réalisés.',
       view: 'Voir'
     },
     // Project Detail
