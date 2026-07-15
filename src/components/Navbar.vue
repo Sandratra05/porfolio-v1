@@ -2,8 +2,8 @@
   <nav class="nav-root" role="navigation">
     <div class="nav-inner">
       <a class="brand" href="#home" @click.prevent="goToSection('#home')">
-        <span class="brand-icon">SR</span>
-        <span class="logo">Sandratra Raben</span>
+        <!--<span class="brand-icon">SR</span>-->
+        <span class="logo">SANDRATRA RABEN</span>
       </a>
 
       <div class="nav-links">

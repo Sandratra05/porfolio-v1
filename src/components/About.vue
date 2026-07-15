@@ -11,10 +11,10 @@
       {{ t('about.description2') }}
     </p>
     
-    <div class="about-highlight">
+    <!--<div class="about-highlight">
       <span class="icon">🚀</span>
       <span>{{ t('about.cta') }}</span>
-    </div>
+    </div>-->
   </div>
 </template>
 

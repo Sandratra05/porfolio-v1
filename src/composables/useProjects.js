@@ -46,7 +46,7 @@ const projectsData = {
       description: 'Application web et mobile pour la gestion de travaux routiers, permettant de suivre les projets, les équipes et les ressources en temps réel. L\'application web offre un tableau de bord complet pour les gestionnaires, tandis que l\'application mobile permet aux équipes sur le terrain de mettre à jour l\'avancement et de signaler les problèmes.',
       image: login,
       images: [listSignalement, listEditButton, listEdit, visiteur, createUser, unblockUser, unblockSuccess, creerSignalement, creerSignalementTri, formCarte, formEnd, formSelection, listSignalementVisiteur, selectionPoint],
-      technologies: ['Spring Boot', 'Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
+      technologies: ['Spring Boot', 'React','Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
       link: '#',
       repo: '#',
       objectives: [
@@ -194,7 +194,7 @@ const projectsData = {
       description: 'Web and mobile application for managing road construction projects, allowing real-time tracking of projects, teams, and resources. The web application provides a comprehensive dashboard for managers, while the mobile application allows field teams to update progress and report issues.',
       image: login,
       images: [listSignalement, listEditButton, listEdit, visiteur, createUser, unblockUser, unblockSuccess, creerSignalement, creerSignalementTri, formCarte, formEnd, formSelection, listSignalementVisiteur, selectionPoint],
-      technologies: ['Spring Boot', 'Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
+      technologies: ['Spring Boot', 'React','Ionic', 'PostgreSQL', 'Firebase', 'Docker'],
       link: '#',
       repo: '#',
       objectives: [

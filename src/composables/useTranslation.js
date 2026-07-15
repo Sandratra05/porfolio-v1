@@ -74,8 +74,9 @@ const translations = {
       label: 'Compétences',
       title: 'Technologies',
       subtitle: 'Voici quelques-unes des technologies que j\'utilise et mon niveau approximatif.',
-      languages: 'Langages',
+      languages: 'Langages de programmation',
       databases: 'Bases de données',
+      methodsArchitecture: 'Méthodes et architecture',
       tools: 'Outils'
     },
     // Footer
@@ -168,8 +169,9 @@ const translations = {
       label: 'Skills',
       title: 'Technologies',
       subtitle: 'Here are some of the technologies I use and my approximate level.',
-      languages: 'Languages',
+      languages: 'Programming languages',
       databases: 'Databases',
+      methodsArchitecture: 'Methods and architecture',
       tools: 'Tools'
     },
     // Footer

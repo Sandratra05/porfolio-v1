@@ -414,7 +414,7 @@ main {
   content: '';
   width: 24px;
   height: 2px;
-  background: var(--gradient-primary);
+  background: var(--color-primary);
   border-radius: 2px;
 }
 
