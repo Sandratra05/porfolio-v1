@@ -149,7 +149,7 @@ const techSections = computed(() => [
   width: 100%;
   min-height: 46px;
   padding: 0.75rem 0.95rem;
-  border-radius: 20px;
+  border-radius: 5px;
   background: var(--color-bg-secondary);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
